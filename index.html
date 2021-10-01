@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>monkey samurai</title>
+  </head>
+
+  <body>
+    <!--*********Inicio del menu*********-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" class="header">
+        <div class="container-fluid">
+          <!--*********logo del restaurante-->
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="img/logo.jpg"
+              width="100px"
+              height="100px"
+              border-radius="50px"
+              alt="monkey samurai"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--*********lista desplegable del menu*********-->
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNavDropdown"
+            class="li-menu"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reservas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  clases
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">basico</a></li>
+                  <li><a class="dropdown-item" href="#">intermedio</a></li>
+                  <li><a class="dropdown-item" href="#">avanzado</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--*********fin del menu*********-->
+    <!--*********inicio portada*********-->
+    <div class="portada">
+      <div class="card mb-3">
+        <!--imagen de los platos-->
+        <img src="img/portada.jpg" class="card-img-top" alt="monkey samurai" />
+      </div>
+    </div>
+    <!--*********fin portada*********-->
+    <!--*********sobre el restaurante*********-->
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Monkey Samurai</h5>
+        <p class="card-text">
+          Somos un restaurante de comida asiatica, usamos sabores orientales con
+          un toque urbano para mejorar tu experiencia
+        </p>
+      </div>
+    </div>
+    <!--*********fin sobre el restaurante-->
+    <!--*********inicio de carrusel*********-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <!--fotos de los platos-->
+      <div class="carousel-inner">
+        <div class="carousel-item active" class="platos">
+          <img
+            src="img/platos1.jpg"
+            class="d-block w-100"
+            alt="sushi - monkey samurai"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sushi Sakura</h5>
+          </div>
+        </div>
+        <div class="carousel-item" class="platos">
+          <img
+            src="img/platos2.jpg"
+            class="d-block w-100"
+            alt="sushi - monkey samurai"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sushi Ronin</h5>
+          </div>
+        </div>
+        <div class="carousel-item" class="platos">
+          <img
+            src="img/platos3.jpg"
+            class="d-block w-100"
+            alt="sushi - monkey samurai"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sushi Yatogami</h5>
+          </div>
+        </div>
+        <!--fin fotos de los platos-->
+        <!--inicio de carrusel de platos-->
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--*********fin del carrusel*********-->
+  </body>
+</html>
